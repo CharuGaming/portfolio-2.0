@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import SocialSidebar from './components/SocialSidebar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -17,8 +16,8 @@ function App() {
       />
 
 
+
       <div className="relative z-10 flex flex-col min-h-screen">
-        <CustomCursor />
         <Navbar />
         <SocialSidebar />
         <Home />

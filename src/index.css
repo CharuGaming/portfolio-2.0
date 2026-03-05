@@ -13,16 +13,6 @@
     @apply bg-background text-text font-inter antialiased;
   }
 
-  /* Hide default cursor on desktop devices to show custom cursor */
-  @media (min-width: 768px) {
-
-    *,
-    *::before,
-    *::after {
-      cursor: none !important;
-    }
-  }
-
   h1,
   h2,
   h3,

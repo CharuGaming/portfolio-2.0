@@ -6,26 +6,30 @@ const SocialSidebar = () => {
         {
             name: 'LinkedIn',
             icon: <Linkedin size={20} />,
-            url: 'https://linkedin.com/in/binojcharuka',
-            color: 'hover:text-black hover:border-black',
+            url: 'https://www.linkedin.com/in/binoj-charuka-0990b7355',
+            hoverBg: 'hover:bg-[#0A66C2]',
+            hoverBorder: 'hover:border-[#0A66C2]',
         },
         {
             name: 'GitHub',
             icon: <Github size={20} />,
-            url: 'https://github.com/binojcharuka',
-            color: 'hover:text-black hover:border-black',
+            url: 'https://github.com/CharuGaming',
+            hoverBg: 'hover:bg-[#24292e]',
+            hoverBorder: 'hover:border-[#24292e]',
         },
         {
             name: 'Instagram',
             icon: <Instagram size={20} />,
-            url: 'https://instagram.com/binojcharuka',
-            color: 'hover:text-black hover:border-black',
+            url: 'https://www.instagram.com/binoj_charuka',
+            hoverBg: 'hover:bg-[#E1306C]',
+            hoverBorder: 'hover:border-[#E1306C]',
         },
         {
             name: 'Email',
             icon: <Mail size={20} />,
-            url: 'mailto:hello@example.com',
-            color: 'hover:text-primary hover:border-primary',
+            url: 'mailto:charuka.yt@gmail.com',
+            hoverBg: 'hover:bg-[#EA4335]',
+            hoverBorder: 'hover:border-[#EA4335]',
         },
     ];
 
@@ -47,7 +51,7 @@ const SocialSidebar = () => {
                             damping: 20,
                             delay: 0.5 + index * 0.1,
                         }}
-                        className={`p-3 rounded-full border border-gray-200 text-gray-400 glass transition-all duration-300 ${link.color} hover:shadow-lg`}
+                        className={`p-3 rounded-full border border-gray-200 text-gray-400 glass transition-all duration-300 hover:text-white hover:shadow-lg group ${link.hoverBg} ${link.hoverBorder}`}
                         aria-label={link.name}
                     >
                         {link.icon}
